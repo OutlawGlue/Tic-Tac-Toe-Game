@@ -105,7 +105,11 @@ namespace Tic_Tac_Toe_Game
             {
                 Console.WriteLine($"{Data[playerTurn].name} won with a {winType}");
             }
-            Console.ReadLine();
+            else
+            {
+                Console.WriteLine("Draw!");
+            }
+                Console.ReadLine();
         }
         static void DisplayBoard(ref char[,] board)
         {
