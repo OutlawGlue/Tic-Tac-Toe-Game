@@ -54,6 +54,15 @@ namespace Tic_Tac_Toe_Game
         {
             Console.WriteLine("Enter Player 1 Name: ");
             Data[0].name = Console.ReadLine();
+
+            //To make testing easier:
+            if (Data[0].name == "t")
+            {
+                Data[0].name = "player1";
+                Data[1].name = "player2";
+                return;
+            }
+
             Console.WriteLine("Enter Player 2 Name: ");
             Data[1].name = Console.ReadLine();
         }
